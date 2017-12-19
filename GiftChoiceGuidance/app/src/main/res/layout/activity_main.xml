@@ -14,9 +14,17 @@
         android:orientation="vertical"
         android:gravity="center">
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/style_title_activity"
             android:text="@string/choose_objects"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="@integer/weight_content_listview">
+        <ListView
+            style="@style/style_list_options"
+            android:id="@+id/lst_activitymain_objects"/>
     </LinearLayout>
 
 </LinearLayout>
