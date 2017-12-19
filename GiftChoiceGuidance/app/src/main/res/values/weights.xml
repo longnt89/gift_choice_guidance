@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="weight_layout_content">85</integer>
+    <integer name="weight_layout_footer">15</integer>
+    <integer name="weight_content_title">10</integer>
+    <integer name="weight_content_listview">90</integer>
+
+</resources>
