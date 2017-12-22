@@ -1,4 +1,34 @@
 <resources>
     <string name="app_name">GiftChoiceGuidance</string>
+
+    <!-- =================================== LABEL CONSTANTS =================================== -->
     <string name="choose_objects">Chọn đối tượng tặng quà</string>
+    <string name="choose_events">Chọn sự kiện tặng quà</string>
+
+    <!-- ================================ ERROR INFO CONSTANTS ================================= -->
+    <string name="errinfo_default_sys_msg">Undefined Error</string>
+    <string name="errinfo_default_usr_msg">Ứng dụng không thể xử lý thông tin.</string>
+
+    <string name="errinfo_sysmsg_column_not_found">Column not found</string>
+
+    <string name="errinfo_sysmsg_null_cursor">The cursor is returned null</string>
+    <string name="errinfo_usrmsg_null_cursor">Thông tin không tìm thấy</string>
+
+    <string name="errinfo_sysmsg_null_scalar">Scalar data not found</string>
+    <string name="errinfo_usrmsg_null_scalar">Chưa có thông tin hiển thị</string>
+
+    <!-- ================================== DIALOG CONSTANTS =================================== -->
+    <string name="dialog_confirm_title_default">Xác nhận lựa chọn</string>
+    <string name="dialog_confirm_msg_default">Bạn có đồng ý lựa chọn này không?</string>
+
+    <string name="dialog_confirm_yes">Có</string>
+    <string name="dialog_confirm_no">Không</string>
+
+    <string name="dialog_info_title_default">Thông tin</string>
+
+    <string name="dialog_warning_title_default">Thông báo</string>
+
+    <string name="dialog_error_title_default">Lỗi</string>
+    <string name="dialog_error_msg_default">Có lỗi nhỏ xảy ra. Bạn vui lòng thử lại sau :)</string>
+
 </resources>

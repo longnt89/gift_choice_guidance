@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="android.project.longnt.giftchoiceguidance.MainActivity">
-
+    tools:context="android.project.longnt.giftchoiceguidance.Business.EventActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dip"
@@ -16,7 +15,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/choose_objects"/>
+            android:text="@string/choose_events"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,7 +23,6 @@
         android:layout_weight="@integer/weight_content_listview">
         <ListView
             style="@style/style_list_actions"
-            android:id="@+id/lst_activitymain_objs"/>
+            android:id="@+id/lst_activityevent_event"/>
     </LinearLayout>
-
 </LinearLayout>
