@@ -181,7 +181,7 @@ public class SQLiteHandler extends SQLiteOpenHelper {
                     int evnId = cursorEvents.getInt(idxEvnId);
                     String evnType = cursorEvents.getString(idxEvnType);
 
-                    eventModels.add(new EventModel(evnId, evnType, objId));
+                    eventModels.add(new EventModel(evnId, evnType));
                 }
             }
             else {

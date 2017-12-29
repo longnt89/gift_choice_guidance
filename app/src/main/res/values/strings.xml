@@ -17,6 +17,8 @@
     <string name="errinfo_sysmsg_null_scalar">Scalar data not found</string>
     <string name="errinfo_usrmsg_null_scalar">Chưa có thông tin hiển thị</string>
 
+    <string name="errinfo_sysmsg_intent_extra_not_found">Cannot find intent extra</string>
+
     <!-- ================================== DIALOG CONSTANTS =================================== -->
     <string name="dialog_confirm_title_default">Xác nhận lựa chọn</string>
     <string name="dialog_confirm_msg_default">Bạn có đồng ý lựa chọn này không?</string>

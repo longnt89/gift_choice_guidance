@@ -7,12 +7,10 @@ package android.project.longnt.giftchoiceguidance.Business;
 public class EventModel {
     private int evnId;
     private String evnType;
-    private int objId;
 
-    public EventModel(int evnId, String evnType, int objId) {
+    public EventModel(int evnId, String evnType) {
         this.evnId = evnId;
         this.evnType = evnType;
-        this.objId = objId;
     }
 
     public int getEvnId() {
@@ -21,9 +19,5 @@ public class EventModel {
 
     public String getEvnType() {
         return evnType;
-    }
-
-    public int getObjId() {
-        return objId;
     }
 }

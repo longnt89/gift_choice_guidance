@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.project.longnt.giftchoiceguidance.Business.AbsActivity;
 import android.project.longnt.giftchoiceguidance.Business.ListObjectAdapter;
 import android.project.longnt.giftchoiceguidance.Business.ObjModel;
+import android.project.longnt.giftchoiceguidance.Constant.StatusConstants;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -21,26 +22,32 @@ public class MainActivity extends AbsActivity {
     }
 
     private void displayObjects() {
-        ArrayList<ObjModel> objModels;
+        try {
+            ArrayList<ObjModel> objModels;
 
-        if (openSQLiteSession()) {
-            objModels = sqLiteHandler.getAllObjects();
+            if (openSQLiteSession()) {
+                objModels = sqLiteHandler.getAllObjects();
 
-            if (objModels == null) {
-                // Error here
+                if (objModels == null) {
+                    showError(null, null, 0);
 
+                }
+                else {
+                    listObjectAdapter = new ListObjectAdapter(objModels, this);
+
+                    listObjs = (ListView)findViewById(R.id.lst_activitymain_objs);
+                    listObjs.setAdapter(listObjectAdapter);
+                }
+
+                closeSQLiteSession();
             }
             else {
-                listObjectAdapter = new ListObjectAdapter(objModels, this);
-
-                listObjs = (ListView)findViewById(R.id.lst_activitymain_objs);
-                listObjs.setAdapter(listObjectAdapter);
+                showError(null, null, 0);
             }
-
-            closeSQLiteSession();
         }
-        else {
+        catch (Exception e) {
             showError(null, null, 0);
+            log(e.getMessage(), StatusConstants.LogType.ERROR);
         }
     }
 }
